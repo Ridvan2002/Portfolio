@@ -10,7 +10,6 @@ function App() {
         <Router>
             <div className="app-container">
                 <nav className="sidebar">
-                    {/* Name at the top of the sidebar */}
                     <h1 className="sidebar-name">Ridvan</h1>
                     
                     <h1 className = "sidebar-title">Designer / Developer</h1>

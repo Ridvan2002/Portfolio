@@ -4,6 +4,7 @@ body, html {
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  background-color: #f4f4f4; /* Match the background color */
 }
 
 /* Flexbox Container for the Sidebar and Main Content */
@@ -121,7 +122,6 @@ body, html {
   line-height: 1.6; /* Improve readability with proper line spacing */
 }
 
-
 /* Main Content Styling */
 .main-content {
   flex: 1;
@@ -135,28 +135,29 @@ body, html {
   height: 100vh;
 }
 
-/* General Styling for About Section */
 .about-section {
   display: flex;
   align-items: flex-start; /* Align items at the top of the section */
-  justify-content: space-between; /* Space out about summary and image */
+  justify-content: flex-start; /* Start alignment at the beginning */
   padding: 20px 40px; /* Less padding at the top, more on the sides */
   background-color: #f4f4f4; /* Light background for the section */
   color: #333; /* Dark text color for readability */
   text-align: left; /* Left align text in the about-summary */
   min-height: 100vh; /* Ensure section takes up at least the full height of the viewport */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  margin-right: 900px;
 }
 
-/* About Content and Skills Section Styling */
 .about-content {
-  flex: 1; /* Take up remaining space next to the image */
+  margin-left: 0px;
+  max-width: 1000px; /* Reduce the maximum width */
+  flex: 1 1 50%; /* Adjust flex basis to take up 50% of the space */
   display: flex;
   flex-direction: column; /* Stack about-summary and skills-section vertically */
+  margin-right: 20px; /* Maintain space between content and profile card */
 }
-
 /* About Summary Styling */
 .about-summary {
-  max-width: 90%; /* Allow about-summary to take up more space */
   padding: 20px; /* Padding inside the summary box */
   background-color: #fff; /* White background for the summary */
   border-radius: 10px; /* Rounded corners for a softer look */
@@ -166,9 +167,8 @@ body, html {
 }
 
 /* Skills Section Styling */
-
 .skills-and-coursework {
-  max-width: 93%;
+  max-width: 100%;
   display: flex; /* Align skills and coursework sections horizontally */
   gap: 20px; /* Space between skills and coursework sections */
 }
@@ -183,20 +183,48 @@ body, html {
   border: 1px solid #ddd;
 }
 
+/* Profile Card Styling */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  padding: 0; /* Remove padding */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 225px; 
+  min-height: 650px;
+}
 
-/* Profile Picture Styling */
-.profile-picture {
-  width: 400px; /* Increase the size of the picture */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 20px; /* Optional: Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  margin-left: 20px; /* Space between content and image */
+/* Image Container Styling */
+.card-image {
+  width: 100%; /* Ensure the image covers the full width of the card */
+  height: 300px; /* Set a fixed height for the image */
+  object-fit: cover; /* Cover the entire container, cropping the image if necessary */
+  border-radius: 10px 10px 0 0; /* Only round the top corners */
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center; /* Center text inside the card */
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #0077b5; /* LinkedIn blue */
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #555;
 }
 
 /* Headings Styling */
 .about-summary h2, .skills-section h3, .coursework-section h3 {
   text-align: left;
-  font-size: 2.5rem; /* Large font size for emphasis */
+  font-size: 1.5rem; /* Large font size for emphasis */
   margin-bottom: 20px; /* Space below the heading */
   color: #0077b5; /* LinkedIn blue for the heading */
   margin-top: 0; /* Remove any top margin */
@@ -204,7 +232,7 @@ body, html {
 
 /* Paragraph and List Styling */
 .about-summary p, .skills-section ul, .coursework-section ul {
-  font-size: 1.6rem; /* Slightly larger text for readability */
+  font-size: 1.3rem; /* Slightly larger text for readability */
   line-height: 1.6; /* Increased line spacing for better readability */
   color: #555; /* Softer text color */
 }
@@ -212,19 +240,24 @@ body, html {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .about-section {
-      flex-direction: column; /* Stack elements on smaller screens */
-      text-align: center; /* Center text on smaller screens */
+    flex-direction: column; /* Stack elements on smaller screens */
+    text-align: center; /* Center text on smaller screens */
   }
-  .about-summary {
-      max-width: 100%; /* Full width for smaller screens */
-      padding-right: 0; /* Remove right padding */
+  .about-content {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 20px; /* Add space below content */
   }
-  .profile-picture {
-      width: 100%; /* Make the picture responsive */
-      margin-top: 50px; /* Add space above the image */
+  .profile-card {
+    max-width: 100%; /* Allow profile card to take full width on smaller screens */
+  }
+  .card-image {
+    width: 100%; /* Make the picture responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 50px; /* Add space above the image */
   }
 }
 
+/* Contact Page Styling */
 .contact-page {
   padding: 20px;
   max-width: 600px;

@@ -1,0 +1,120 @@
+.projects-section {
+    padding: 40px 0px;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.projects-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Grid styling for the projects (Vertical Layout) */
+.projects-grid {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    gap: 40px;
+    align-items: center; /* Center cards horizontally */
+}
+
+/* General styling for each project card */
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px; /* Increase the width to cover more of the page */
+    min-height: 300px;
+    text-align: left;
+    display: flex; /* Use flexbox to position image and content side by side */
+    align-items: center; /* Center content vertically */
+    padding: 20px; /* Add padding to create space around the content */
+    transition: none; /* Remove hover effect */
+}
+
+/* Flex direction for different layouts */
+.project-card.left-image {
+    flex-direction: row; /* Image on the left, content on the right */
+}
+
+.project-card.right-image {
+    flex-direction: row-reverse; /* Image on the right, content on the left */
+}
+
+.project-image {
+    width: 45%; /* Decrease the width of the image */
+    height:auto; /* Auto height to maintain aspect ratio */
+    object-fit: cover;
+    cursor: pointer; /* Make the image cursor a pointer */
+    align-self: center; /* Center the image vertically within the card */
+}
+
+/* Title styling */
+.project-title {
+    font-size: 2rem;
+    color: #0077b5;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 0; /* Remove any top margin */
+    padding-top: 10px; /* Optional: Add padding to bring it closer to the top */
+}
+
+/* Description styling */
+.project-description {
+    font-size: 1.4rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.project-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+}
+
+.project-links p {
+    margin: 10px 0; /* Add space between the two paragraphs */
+    font-size: 20px;
+}
+
+.project-link {
+    text-decoration: underline; /* Underline the hyperlink */
+    color: #0077b5; /* Keep the link color */
+}
+
+.project-link:hover {
+    text-decoration: none; /* Remove underline on hover */
+    background-color: transparent; /* Ensure background doesn't change on hover */
+    color: #005582; /* Change color on hover */
+}
+
+/* Modal styling */
+.modal {
+    display: flex; /* Flexbox for centering content */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

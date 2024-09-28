@@ -1,25 +1,15 @@
-import Card from './Cards/Card.jsx'
-
 function About() {
     return (
         <div className="about-section">
             <div className="about-content">
                 <div className="about-summary">
-                    <h2>About me</h2>
+                    <h2>About Me</h2>
                     <p>
                         As a self-motivated and hard-working Computer Science graduate, I bring hands-on experience
-                        in Java programming and a deep understanding of the software development lifecycle. With a
-                        keen eye for detail and strong organizational skills, I am passionate about writing clean,
-                        efficient code and rigorously testing it to ensure flawless performance. Throughout my
-                        academic and personal projects, I have honed my abilities in various programming languages
-                        and technologies, including Java, React, HTML, CSS, PHP, JavaScript, and SQL. My commitment to
-                        continuous learning and problem-solving has enabled me to successfully complete complex
-                        projects, such as developing an Android File Manager application and a Property Listings
-                        platform, both of which significantly improved user engagement and system performance.
-                        I am eager to leverage my technical skills and collaborative spirit to contribute to innovative
-                        software development initiatives in a dynamic team environment. Whether it's optimizing a
-                        website's performance, managing client databases, or developing robust mobile applications, I
-                        am ready to take on new challenges and make a meaningful impact.
+                        in Java programming and a deep understanding of the software development lifecycle. I am passionate
+                        about writing clean, efficient code and rigorously testing it to ensure flawless performance.
+                        My technical skills span various programming languages and technologies, including Java, React, HTML, CSS, PHP,
+                        JavaScript, and SQL. I am eager to leverage my abilities to contribute to innovative software development initiatives.
                     </p>
                 </div>
                 <div className="skills-and-coursework">
@@ -34,7 +24,7 @@ function About() {
                         </ul>
                     </div>
                     <div className="coursework-section">
-                        <h3>CourseWork</h3>
+                        <h3>Coursework</h3>
                         <ul>
                             <li>Web Programming</li>
                             <li>Software Development</li>
@@ -45,7 +35,19 @@ function About() {
                     </div>
                 </div>
             </div>
-            <Card/>
+            <div className="profile-card">
+                <div className="card-image-container">
+                    <img className="card-image" src="/assets/Ridvan.png" alt="profile picture" />
+                </div>
+                <div className="card-content">
+                    <h2 className="card-title">Education</h2>
+                    <p className="card-text">
+                        Georgia State University, B.Sc. in Computer Science
+                        <br />
+                        Associate of Science in Core Curriculum (ASCC)
+                    </p>
+                </div>
+            </div>
         </div>
     );
 }
