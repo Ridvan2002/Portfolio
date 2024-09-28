@@ -1,68 +1,284 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+body, html {
   margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Flexbox Container for the Sidebar and Main Content */
+.app-container {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Sidebar Styling */
+.sidebar {
+  width: 250px; /* Set the width of the sidebar */
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed; /* Fix the sidebar so it stays in place */
+  height: 100vh;
+  text-align: center; /* Ensure text is centered */
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+/* Name Styling in Sidebar */
+.sidebar-name {
+  font-size: 1.9rem;
+  margin: 0;
+  padding: 10px 0; /* Space above and below the name */
+}
+
+/* Title Styling in Sidebar */
+.sidebar-title {
+  color: grey;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 10px 0; /* Space above and below the title */
+}
+
+/* Sidebar Link Styling */
+.sidebar-link {
+  margin: 20px 0; /* Space between links */
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.sidebar-link:hover {
+  color: #ddd;
+}
+
+/* Sidebar Separator Styling */
+.sidebar-separator {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #555;
+  margin: 10px 0;
+}
+
+/* Social Icons Wrapper */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; /* Space above icons */
+}
+
+/* Sidebar Icon Styling */
+.sidebar-icon {
+  font-size: 2.5rem; /* Adjust size */
+  margin-right: 15px; /* Space between icons */
+  transition: transform 0.3s ease; /* Smooth transformation on hover */
+  text-decoration: none;
+}
+
+.sidebar-icon .fa-linkedin {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+.sidebar-icon .fa-github {
+  color: white; /* Default GitHub icon color */
+}
+
+.sidebar-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make the container take the full viewport height */
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.name-title {
+  font-size: 4rem; /* Large font size for your name */
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.title-subtitle {
+  font-size: 2rem; /* Slightly smaller font size for your title */
+  color: #0077b5; /* Optional: LinkedIn blue to match your branding */
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  font-size: 1.2rem; /* Standard font size for the introduction text */
+  color: #555;
+  max-width: 600px; /* Limit the width of the text for better readability */
+  margin: 0 auto; /* Center the text block */
+  line-height: 1.6; /* Improve readability with proper line spacing */
+}
+
+
+/* Main Content Styling */
+.main-content {
+  flex: 1;
+  margin-left: 250px; /* Offset by the width of the sidebar */
+  padding: 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* General Styling for About Section */
+.about-section {
+  display: flex;
+  align-items: flex-start; /* Align items at the top of the section */
+  justify-content: space-between; /* Space out about summary and image */
+  padding: 20px 40px; /* Less padding at the top, more on the sides */
+  background-color: #f4f4f4; /* Light background for the section */
+  color: #333; /* Dark text color for readability */
+  text-align: left; /* Left align text in the about-summary */
+  min-height: 100vh; /* Ensure section takes up at least the full height of the viewport */
+}
+
+/* About Content and Skills Section Styling */
+.about-content {
+  flex: 1; /* Take up remaining space next to the image */
+  display: flex;
+  flex-direction: column; /* Stack about-summary and skills-section vertically */
+}
+
+/* About Summary Styling */
+.about-summary {
+  max-width: 90%; /* Allow about-summary to take up more space */
+  padding: 20px; /* Padding inside the summary box */
+  background-color: #fff; /* White background for the summary */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid #ddd; /* Light border around the summary */
+  margin-bottom: 30px; /* Space between About and Skills sections */
+}
+
+/* Skills Section Styling */
+
+.skills-and-coursework {
+  max-width: 93%;
+  display: flex; /* Align skills and coursework sections horizontally */
+  gap: 20px; /* Space between skills and coursework sections */
+}
+
+/* Skills Section Styling */
+.skills-section, .coursework-section {
+  flex: 1; /* Make each section take up equal space */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+
+/* Profile Picture Styling */
+.profile-picture {
+  width: 400px; /* Increase the size of the picture */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 20px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-left: 20px; /* Space between content and image */
+}
+
+/* Headings Styling */
+.about-summary h2, .skills-section h3, .coursework-section h3 {
+  text-align: left;
+  font-size: 2.5rem; /* Large font size for emphasis */
+  margin-bottom: 20px; /* Space below the heading */
+  color: #0077b5; /* LinkedIn blue for the heading */
+  margin-top: 0; /* Remove any top margin */
+}
+
+/* Paragraph and List Styling */
+.about-summary p, .skills-section ul, .coursework-section ul {
+  font-size: 1.6rem; /* Slightly larger text for readability */
+  line-height: 1.6; /* Increased line spacing for better readability */
+  color: #555; /* Softer text color */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .about-section {
+      flex-direction: column; /* Stack elements on smaller screens */
+      text-align: center; /* Center text on smaller screens */
+  }
+  .about-summary {
+      max-width: 100%; /* Full width for smaller screens */
+      padding-right: 0; /* Remove right padding */
+  }
+  .profile-picture {
+      width: 100%; /* Make the picture responsive */
+      margin-top: 50px; /* Add space above the image */
+  }
+}
+
+.contact-page {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page h1 {
+  text-align: center;
+  color: #333;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-textarea {
+  height: 150px;
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+.submit-button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0077b5;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: background-color 0.3s ease;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.submit-button:hover {
+  background-color: #005582;
 }
