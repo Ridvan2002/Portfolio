@@ -2,11 +2,11 @@
     padding: 40px 0px;
     background-color: #f4f4f4;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 300px;
 }
 
 .projects-title {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     color: #333;
     margin-bottom: 40px;
 }
@@ -15,7 +15,7 @@
 .projects-grid {
     display: flex;
     flex-direction: column; /* Stack cards vertically */
-    gap: 40px;
+    gap: 20px;
     align-items: center; /* Center cards horizontally */
 }
 
@@ -26,8 +26,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 100%;
-    max-width: 1200px; /* Increase the width to cover more of the page */
-    min-height: 300px;
+    max-width: 850px; /* Increase the width to cover more of the page */
     text-align: left;
     display: flex; /* Use flexbox to position image and content side by side */
     align-items: center; /* Center content vertically */
@@ -54,7 +53,7 @@
 
 /* Title styling */
 .project-title {
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: #0077b5;
     margin-bottom: 10px;
     text-align: center;
@@ -64,7 +63,7 @@
 
 /* Description styling */
 .project-description {
-    font-size: 1.4rem;
+    font-size: 1.0rem;
     color: #555;
     margin-bottom: 20px;
     line-height: 1.3;
@@ -80,7 +79,7 @@
 
 .project-links p {
     margin: 10px 0; /* Add space between the two paragraphs */
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .project-link {

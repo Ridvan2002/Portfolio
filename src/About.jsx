@@ -1,4 +1,8 @@
+import React from 'react';
+
 function About() {
+    const base = import.meta.env.BASE_URL;
+
     return (
         <div className="about-section">
             <div className="about-content">
@@ -37,7 +41,11 @@ function About() {
             </div>
             <div className="profile-card">
                 <div className="card-image-container">
-                    <img className="card-image" src="/assets/Ridvan.png" alt="profile picture" />
+                    <img 
+                        className="card-image" 
+                        src={`${base}assets/Ridvan.PNG`}
+                        alt="profile picture" 
+                    />
                 </div>
                 <div className="card-content">
                     <h2 className="card-title">Education</h2>

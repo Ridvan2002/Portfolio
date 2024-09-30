@@ -15,7 +15,7 @@ body, html {
 
 /* Sidebar Styling */
 .sidebar {
-  width: 250px; /* Set the width of the sidebar */
+  width: 150px; /* Set the width of the sidebar */
   background-color: #333;
   color: white;
   display: flex;
@@ -30,7 +30,7 @@ body, html {
 
 /* Name Styling in Sidebar */
 .sidebar-name {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   margin: 0;
   padding: 10px 0; /* Space above and below the name */
 }
@@ -38,17 +38,17 @@ body, html {
 /* Title Styling in Sidebar */
 .sidebar-title {
   color: grey;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   margin: 0;
   padding: 10px 0; /* Space above and below the title */
 }
 
 /* Sidebar Link Styling */
 .sidebar-link {
-  margin: 20px 0; /* Space between links */
+  margin: 10px 0; /* Space between links */
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   transition: color 0.3s ease;
 }
 
@@ -73,7 +73,7 @@ body, html {
 
 /* Sidebar Icon Styling */
 .sidebar-icon {
-  font-size: 2.5rem; /* Adjust size */
+  font-size: 2.0rem; /* Adjust size */
   margin-right: 15px; /* Space between icons */
   transition: transform 0.3s ease; /* Smooth transformation on hover */
   text-decoration: none;
@@ -94,22 +94,22 @@ body, html {
 .home-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   height: 100vh; /* Make the container take the full viewport height */
   text-align: center;
+  margin-top: 150px;
   padding: 20px;
   background-color: #f4f4f4;
 }
 
 .name-title {
-  font-size: 4rem; /* Large font size for your name */
+  font-size: 2rem; /* Large font size for your name */
   color: #333;
   margin-bottom: 10px;
 }
 
 .title-subtitle {
-  font-size: 2rem; /* Slightly smaller font size for your title */
+  font-size: 1.2rem; /* Slightly smaller font size for your title */
   color: #0077b5; /* Optional: LinkedIn blue to match your branding */
   margin-bottom: 20px;
 }
@@ -125,7 +125,7 @@ body, html {
 /* Main Content Styling */
 .main-content {
   flex: 1;
-  margin-left: 250px; /* Offset by the width of the sidebar */
+  margin-left: 100px; /* Offset by the width of the sidebar */
   padding: 20px;
   background-color: #f4f4f4;
   display: flex;
@@ -145,12 +145,10 @@ body, html {
   text-align: left; /* Left align text in the about-summary */
   min-height: 100vh; /* Ensure section takes up at least the full height of the viewport */
   flex-wrap: nowrap; /* Prevent wrapping */
-  margin-right: 900px;
 }
 
 .about-content {
-  margin-left: 0px;
-  max-width: 1000px; /* Reduce the maximum width */
+  max-width: 900px; /* Reduce the maximum width */
   flex: 1 1 50%; /* Adjust flex basis to take up 50% of the space */
   display: flex;
   flex-direction: column; /* Stack about-summary and skills-section vertically */
@@ -163,7 +161,7 @@ body, html {
   border-radius: 10px; /* Rounded corners for a softer look */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   border: 1px solid #ddd; /* Light border around the summary */
-  margin-bottom: 30px; /* Space between About and Skills sections */
+  margin-bottom: 15px; /* Space between About and Skills sections */
 }
 
 /* Skills Section Styling */
@@ -192,8 +190,8 @@ body, html {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 225px; 
-  min-height: 650px;
+  max-width: 250px; 
+  min-height: 601px;
 }
 
 /* Image Container Styling */
