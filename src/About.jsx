@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/About.css'
 
 function About() {
     const base = import.meta.env.BASE_URL;
@@ -61,3 +62,4 @@ function About() {
 }
 
 export default About;
+

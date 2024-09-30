@@ -1,0 +1,109 @@
+.about-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px 40px;
+  text-align: left;
+  flex-wrap: nowrap;
+}
+
+.about-content {
+  max-width: 900px;
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.about-summary {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.skills-and-coursework {
+  max-width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.skills-section, .coursework-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+  max-height: 601px;
+}
+
+.card-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #0077b5;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+.about-summary h2, .skills-section h3, .coursework-section h3 {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #0077b5;
+  margin-top: 0;
+}
+
+.about-summary p, .skills-section ul, .coursework-section ul {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-content {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .profile-card {
+    max-width: 100%;
+  }
+  .card-image {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+}

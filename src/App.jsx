@@ -24,7 +24,6 @@ function App() {
                     <hr className="sidebar-separator" />
                     <Link to="/contact" className="sidebar-link">Contact</Link>
                     
-                    {/* LinkedIn and GitHub Icons */}
                     <div className="social-icons">
                         <a href="https://www.linkedin.com/in/ridvan-suleymanov-profile/" target="_blank" className="sidebar-icon">
                             <i className="fab fa-linkedin"></i>
@@ -35,7 +34,6 @@ function App() {
                     </div>
                 </nav>
 
-                {/* Main Content */}
                 <div className="main-content">
                     <Routes>
                         <Route path="/" element={<Home />} />
