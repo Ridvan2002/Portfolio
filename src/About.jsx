@@ -43,7 +43,7 @@ function About() {
                 <div className="card-image-container">
                     <img 
                         className="card-image" 
-                        src={`${base}assets/Ridvan.PNG`}
+                        src={`${base}assets/Ridvan.png`}
                         alt="profile picture" 
                     />
                 </div>
