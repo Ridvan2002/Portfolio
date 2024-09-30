@@ -6,8 +6,12 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 
 function App() {
+
+    const isProduction = process.env.NODE_ENV === 'production';
+    const basePath = isProduction ? '/Portfolio' : '/';
+
     return (
-        <Router>
+        <Router basename={basePath}>
             <div className="app-container">
                 <nav className="sidebar">
                     <h1 className="sidebar-name">Ridvan</h1>
