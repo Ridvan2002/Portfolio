@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './styles/Projects.css';
 
 function Projects() {
-    const [selectedImage, setSelectedImage] = useState(null); // State to track selected image
-    const [selectedVideo, setSelectedVideo] = useState(null); // State to track selected video
+    const [selectedImage, setSelectedImage] = useState(null);
+    const [selectedVideo, setSelectedVideo] = useState(null);
 
     const base = import.meta.env.BASE_URL;
 

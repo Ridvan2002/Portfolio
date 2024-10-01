@@ -59,22 +59,15 @@ body, html {
 
 .social-icons {
   display: flex;
-  justify-content: center;
-  margin-top: 30px;
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 15px;
 }
 
 .sidebar-icon {
   font-size: 2.0rem;
-  margin-right: 15px;
+  margin-bottom: 20px;
   transition: transform 0.3s ease;
-  text-decoration: none;
-}
-
-.sidebar-icon .fa-linkedin {
-  color: #0077b5;
-}
-
-.sidebar-icon .fa-github {
   color: white;
 }
 
@@ -98,13 +91,13 @@ body, html {
 }
 
 .name-title {
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: #333;
   margin-bottom: 10px;
 }
 
 .title-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #0077b5;
   margin-bottom: 20px;
 }

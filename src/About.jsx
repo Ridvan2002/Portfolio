@@ -51,9 +51,11 @@ function About() {
                 <div className="card-content">
                     <h2 className="card-title">Education</h2>
                     <p className="card-text">
-                        Georgia State University, B.Sc. in Computer Science
-                        <br />
-                        Associate of Science in Core Curriculum (ASCC)
+                    Georgia State University <br/>
+                    Atlanta, GA <br/>
+                    May 2024<br/>
+                    GPA : 3.65 <br/>
+                    Bachelor of Science in Computer Science
                     </p>
                 </div>
             </div>

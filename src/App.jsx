@@ -27,13 +27,20 @@ function App() {
                     <Link to="/projects" className="sidebar-link">Projects</Link>
                     <hr className="sidebar-separator" />
                     <Link to="/contact" className="sidebar-link">Contact</Link>
-                    
+                    <hr className="sidebar-separator" />
+
                     <div className="social-icons">
                         <a href="https://www.linkedin.com/in/ridvan-suleymanov-profile/" target="_blank" className="sidebar-icon">
                             <i className="fab fa-linkedin"></i>
                         </a>
                         <a href="https://github.com/Ridvan2002" target="_blank" className="sidebar-icon">
                             <i className="fab fa-github"></i>
+                        </a>
+                        <a href="https://x.com/Ridvan_2002" target="_blank" className="sidebar-icon">
+                            <i className="fab fa-discord"></i>
+                        </a>
+                        <a href="https://x.com/Ridvan_2002" target="_blank" className="sidebar-icon">
+                            <i className="fab fa-twitter"></i>
                         </a>
                     </div>
                 </nav>
