@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './styles/About.css'
 
@@ -15,6 +16,9 @@ function About() {
                         about writing clean, efficient code and rigorously testing it to ensure flawless performance.
                         My technical skills span various programming languages and technologies, including Java, React, HTML, CSS, PHP,
                         JavaScript, and SQL. I am eager to leverage my abilities to contribute to innovative software development initiatives.
+                    </p>
+                    <p>
+                        <a href="https://drive.google.com/file/d/1YE7eaP68BltsxFtxmQznwS5A-cGeY5MN/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View My Resume!</a>
                     </p>
                 </div>
                 <div className="skills-and-coursework">
@@ -49,17 +53,17 @@ function About() {
                     />
                 </div>
                 <div className="card-content">
-                    <h2 className="card-title">Education</h2>
-                    <p className="card-text">
-                    Georgia State University <br/>
-                    Atlanta, GA <br/>
-                    May 2024<br/>
-                    GPA : 3.65 <br/>
-                    Bachelor of Science in Computer Science
-                    </p>
+                        <h2 className="card-title">Education</h2>
+                        <p className="card-text">
+                            Georgia State University 
+                            Atlanta, GA <br/>
+                            May 2024<br/>
+                            Bachelor of Science in Computer Science
+                        </p>
+                        <img className="gsulogo" src={`${base}assets/gsu.png`} alt="GSU Logo" />
+                    </div>
                 </div>
             </div>
-        </div>
     );
 }
 

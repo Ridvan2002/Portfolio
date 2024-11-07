@@ -53,4 +53,11 @@
   .submit-button:hover {
     background-color: #005582;
   }
+
+  @media (max-width: 768px) {
+    .contact-page {
+      padding: 20px;
+      margin-top: 0px;
+    }
+  }
   

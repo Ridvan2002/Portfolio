@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./Home";
@@ -36,7 +38,7 @@ function App() {
                         <a href="https://github.com/Ridvan2002" target="_blank" className="sidebar-icon">
                             <i className="fab fa-github"></i>
                         </a>
-                        <a href="https://x.com/Ridvan_2002" target="_blank" className="sidebar-icon">
+                        <a href="https://discord.gg/hu8gHTS4" target="_blank" className="sidebar-icon">
                             <i className="fab fa-discord"></i>
                         </a>
                         <a href="https://x.com/Ridvan_2002" target="_blank" className="sidebar-icon">

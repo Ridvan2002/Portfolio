@@ -22,6 +22,13 @@ function Projects() {
             link: `${base}assets/FILE_MANAGER_PREVIEW.mp4`,
             repo: "https://github.com/Ridvan2002/FileManager"
         },
+        {
+            title: "Network Traffic Analyzer",
+            description: "This Network Analyzer program was created using Python and is designed to process PCAP (Packet Capture) files, which are used to store network traffic data, to carefully examine network traffic. The program makes use of Scapy, a Python library for packet manipulation. It reads PCAP files, then extracts relevant data like IP addresses, protocols, and timestamps. It offers insights into network communications by extracting packet information, finding frequent communication pairings, seeing possible security risks like port monitoring and suspicious activities, and visualizing different aspects of the network traffic.",
+            imageUrl: `${base}assets/networkanalyzer.png`,
+            link: `https://docs.google.com/presentation/d/e/2PACX-1vTAH5biop0pniq_iTKdezIp5ecbyAI70xXa61l3XeLBxpiClKu19h94YS-yu0nqcg/pub?start=false&loop=false&delayms=3000`,
+            repo: "https://github.com/Ridvan2002/NetworkAnalyzer"
+        },
     ];
 
     const handleImageClick = (imageUrl) => {

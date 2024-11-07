@@ -77,7 +77,7 @@ body, html {
 
 .main-content {
   flex: 1;
-  margin-left: 100px;
+  margin-left: 130px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -108,4 +108,63 @@ body, html {
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
+}
+
+/* Existing styles for larger screens */
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column; /* Stack sidebar on top */
+  }
+
+  .sidebar {
+    width: 100%; /* Full width for top navigation */
+    height: auto; /* Adjust height to fit content */
+    flex-direction: column; /* Display items in a row */
+    padding: 10px 0; /* Adjust padding */
+  }
+
+  .sidebar-link {
+    font-size: 1.2rem;
+    margin: 10px; /* Adjust margin for spacing */
+  }
+
+  .social-icons {
+    flex-direction: row; /* Display social icons in a row */
+    margin-top: 10px;
+  }
+
+  .sidebar-icon {
+    margin: 0 20px; /* Adjust spacing */
+  }
+  .main-content {
+    margin-left: 0; /* Remove left margin to center content */
+    margin-top: 342px; /* Add top margin if needed for spacing */
+  }
+
+  .home-container {
+    margin-top: 20px;
+  }
+
+  .name-title {
+    font-size: 2.0rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .sidebar-link {
+    margin: 5px 0;
+    font-size: 1.0rem;
+  }
+  .sidebar-name {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  .sidebar-title {
+    color: grey;
+    font-size: 1.0rem;
+    margin: 0;
+    padding: 0px 0;
+  }
 }

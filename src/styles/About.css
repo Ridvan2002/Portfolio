@@ -1,3 +1,34 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+/* .sidebar {
+  width: 150px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  height: 100vh;
+  text-align: center;
+} */
+
+.main-content {
+  flex: 1;
+  margin-left: 150px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
 .about-section {
   display: flex;
   align-items: flex-start;
@@ -47,7 +78,7 @@
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 200px;
+  max-width: 280px;
   min-height: 600px;
 }
 
@@ -57,18 +88,19 @@
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
+.card-image-container {
+  min-width: 280px;
+}
 
 .card-content {
-  padding: 0px;
+  padding: 20px;
   text-align: center;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 .card-title {
   font-size: 1.5rem;
   color: #0077b5;
-  margin-top: 15px;
+  margin-top: 7px;
 }
 
 .card-text {
@@ -91,21 +123,146 @@
   color: #555;
 }
 
-@media (max-width: 768px) {
-  .about-section {
-    flex-direction: column;
-    text-align: center;
-  }
+.gsulogo{
+  max-height: 100px;
+}
+
+@media (max-width: 1024px) {
   .about-content {
-    margin-right: 0;
-    margin-bottom: 20px;
+    min-width: 540px;
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
   }
-  .profile-card {
-    max-width: 100%;
-  }
+
   .card-image {
     width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: static;
+    width: 100%;
     height: auto;
-    margin-top: 50px;
+    padding: 10px 0;
+  }
+
+  .main-content {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .about-summary h2, .skills-section h3, .coursework-section h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+  }
+
+  .about-summary p, .skills-section ul, .coursework-section ul {
+    text-align: left;
+    font-size: 1.35rem;
+    margin-bottom: 0px;
+  }
+
+  .about-section {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .about-content {
+    min-width: 200px;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .card-content {
+    margin-left: 25px;
+    text-align: center;
+  }
+
+  .profile-card {
+    max-width: 100%;
+    flex-direction: row;
+    min-width: 720px;
+    min-height: 350px;
+  }
+
+  .card-image {
+    min-width: 300px;
+    max-height: 300px;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
+
+  .about-summary, .skills-section, .coursework-section {
+    margin: 10px 0;
+  }
+
+  .gsulogo{
+    max-height: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-summary p, .skills-section ul, .coursework-section ul {
+    font-size: 1.0rem;
+  }
+
+  .card-image {
+    min-width: 225px;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px;
+    margin: 10px 0px;
+  }
+
+  .card-content {
+    margin-left: 0px;
+  }
+
+  .skills-and-coursework {
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .profile-card {
+    margin-top: 10px;
+    flex-direction: column;
+    min-width: 0px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-top: 0px;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .card-image {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 375px) {
+  .card-image {
+    min-width: 270px;
+  }
+}
+
+@media (max-width: 320px) {
+  .card-image {
+    min-width: 100px;
+  }
+  .card-image-container {
+    min-width: 100px;
   }
 }
