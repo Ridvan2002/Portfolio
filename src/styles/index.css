@@ -88,6 +88,7 @@ body, html {
   flex-direction: column;
   text-align: center;
   margin-top: 180px;
+  min-height: 500px;
 }
 
 .name-title {
@@ -170,5 +171,28 @@ body, html {
     font-size: 1.0rem;
     margin: 0;
     padding: 0px 0;
+  }
+}
+
+@media(max-width: 480px){
+
+  .name-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+
+  }
+
+  .title-subtitle {
+    font-size: 1.17rem;
+    margin-bottom: 30px;
+  }
+
+  .intro-text{
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .greeting{
+    font-size: 1.3rem;
   }
 }
