@@ -20,8 +20,8 @@ body, html {
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  position: fixed;
-  height: 100vh;
+  /* position: fixed; */
+  height: 110vh;
   text-align: center;
 }
 
@@ -110,8 +110,11 @@ body, html {
   line-height: 1.6;
 }
 
-/* Existing styles for larger screens */
-
+@media (min-width: 769px) {
+.sidebar {
+  position: fixed;
+  }
+}
 @media (max-width: 768px) {
   .app-container {
     flex-direction: column; /* Stack sidebar on top */
@@ -122,6 +125,7 @@ body, html {
     height: auto; /* Adjust height to fit content */
     flex-direction: column; /* Display items in a row */
     padding: 10px 0; /* Adjust padding */
+    position: none;
   }
 
   .sidebar-link {
@@ -139,7 +143,7 @@ body, html {
   }
   .main-content {
     margin-left: 0; /* Remove left margin to center content */
-    margin-top: 342px; /* Add top margin if needed for spacing */
+    margin-top: 0px; /* Add top margin if needed for spacing */
   }
 
   .home-container {

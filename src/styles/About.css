@@ -7,20 +7,6 @@ body, html {
   background-color: #f4f4f4;
 }
 
-/* .sidebar {
-  width: 150px;
-  background-color: #333;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-  position: fixed;
-  height: 100vh;
-  text-align: center;
-} */
-
 .main-content {
   flex: 1;
   margin-left: 150px;
@@ -63,7 +49,7 @@ body, html {
 
 .skills-section, .coursework-section {
   flex: 1;
-  padding: 20px;
+  padding: 20px 0px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -110,7 +96,7 @@ body, html {
 }
 
 .about-summary h2, .skills-section h3, .coursework-section h3 {
-  text-align: left;
+  text-align: center;
   font-size: 1.5rem;
   margin-bottom: 20px;
   color: #0077b5;
@@ -127,9 +113,20 @@ body, html {
   max-height: 100px;
 }
 
+@media (min-width: 1024px) {
+  .skills-section h3, .coursework-section h3 {
+      text-align: left;
+      padding: 0px 20px;
+    }
+
+  .about-summary h2{
+    text-align: left;
+  }
+}
+
 @media (max-width: 1024px) {
   .about-content {
-    min-width: 540px;
+    min-width: 580px;
     flex: 1 1 50%;
     display: flex;
     flex-direction: column;
@@ -146,22 +143,9 @@ body, html {
 }
 
 @media (max-width: 768px) {
-  .sidebar {
-    position: static;
-    width: 100%;
-    height: auto;
-    padding: 10px 0;
-  }
-
-  .main-content {
-    margin-left: 0;
-    margin-top: 20px;
-  }
-
-  .about-summary h2, .skills-section h3, .coursework-section h3 {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 0px;
+  
+  .skills-and-coursework {
+    margin-bottom: 10px;
   }
 
   .about-summary p, .skills-section ul, .coursework-section ul {
@@ -169,7 +153,7 @@ body, html {
     font-size: 1.35rem;
     margin-bottom: 0px;
   }
-
+  
   .about-section {
     flex-direction: column;
     padding: 10px;
@@ -231,6 +215,7 @@ body, html {
   .skills-and-coursework {
     flex-direction: column;
     gap: 1px;
+    margin-bottom: 0px;
   }
 
   .profile-card {
