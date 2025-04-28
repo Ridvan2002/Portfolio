@@ -48,11 +48,11 @@ function About() {
                     <div className="coursework-section">
                         <h3>Relevant Coursework</h3>
                         <ul>
-                            <li>Web Programming & Software Engineering</li>
+                            <li>Software Engineering</li>
+                            <li>Web Programming</li>
                             <li>Data Structures & Algorithms</li>
                             <li>Operating Systems</li>
-                            <li>Software Development Lifecycle</li>
-                            <li>Human-Computer Interaction</li>
+                            <li>Theoretical Foundations of Computer Science</li>
                         </ul>
                     </div>
                 </div>
