@@ -110,36 +110,34 @@ body, html {
   line-height: 1.6;
 }
 
-/* Existing styles for larger screens */
-
-@media (max-width: 768px) {
+@media (max-width: 816px) {
   .app-container {
-    flex-direction: column; /* Stack sidebar on top */
+    flex-direction: column;
   }
 
   .sidebar {
-    width: 100%; /* Full width for top navigation */
-    height: auto; /* Adjust height to fit content */
-    flex-direction: column; /* Display items in a row */
-    padding: 10px 0; /* Adjust padding */
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 10px 0;
   }
 
   .sidebar-link {
     font-size: 1.2rem;
-    margin: 10px; /* Adjust margin for spacing */
+    margin: 10px;
   }
 
   .social-icons {
-    flex-direction: row; /* Display social icons in a row */
+    flex-direction: row;
     margin-top: 10px;
   }
 
   .sidebar-icon {
-    margin: 0 20px; /* Adjust spacing */
+    margin: 0 20px;
   }
   .main-content {
-    margin-left: 0; /* Remove left margin to center content */
-    margin-top: 342px; /* Add top margin if needed for spacing */
+    margin-left: 0;
+    margin-top: 342px;
   }
 
   .home-container {

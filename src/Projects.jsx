@@ -9,6 +9,13 @@ function Projects() {
 
     const projects = [
         {
+            title: "Cooledtured Anime Quizzes",
+            description: "As a Web Developer Intern at Cooledtured, I designed and implemented interactive anime- and video game-themed quizzes to enhance user engagement on the e-commerce platform. Using React, Remix, Firebase, and TailwindCSS, I developed reusable components, managed quiz state flows, integrated authentication and real-time data storage, and built REST API endpoints for dynamic content updates. Features included leaderboard tracking, animated result screens with character-matching logic, and mobile compatibility. Deployed on Shopify Oxygen, the project became a key part of Cooledtured’s user engagement strategy.",
+            imageUrl: `${base}assets/cooledtured_quiz.png`, 
+            link: "https://cooledtured.com/engage",
+            repo: "https://github.com/Ridvan2002/QuizFeature"
+        },
+        {
             title: "Real Estate Website",
             description: "TheRealEstate is a web application that enables users to view, list, buy, and manage properties. It includes features such as user authentication, wishlist functionality, and a secure purchase flow. The application is built with React and uses Vite for development and bundling. It also incorporates React Router for navigation, CSS Modules for styling, and Node.js with Express for backend integration. The frontend is deployed on GitHub Pages. The app allows users to browse property listings, view details, add properties to a wishlist, list their own properties for sale, and securely initiate property purchases.",
             imageUrl: `${base}assets/RealEstate.png`,

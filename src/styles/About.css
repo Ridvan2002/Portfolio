@@ -79,17 +79,13 @@ body, html {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 280px;
-  min-height: 600px;
 }
 
 .card-image {
-  width: 100%;
-  height: 300px;
+  width: 280px;
+  height : 400px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
-}
-.card-image-container {
-  min-width: 280px;
 }
 
 .card-content {
@@ -127,7 +123,19 @@ body, html {
   max-height: 100px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
+  .about-section {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+  .skills-and-coursework {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
   .about-content {
     min-width: 540px;
     flex: 1 1 50%;
@@ -136,16 +144,51 @@ body, html {
     margin-right: 20px;
   }
 
-  .card-image {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-  }
+  /* .card-content {
+    margin-left: 120px;
+    text-align: center;
+  } */
+
+  .card-title {
+  font-size: 1.5rem;
+  color: #0077b5;
+  margin-top: 7px;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  line-height: 1.55;
+  color: #555;
+}
+
+.card-image {
+  min-width: 320px;
+  max-height: 420px;
+  border-radius: 10px;
+}
+
+.profile-card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+  min-width: 97.7%;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .sidebar {
     position: static;
     width: 100%;
@@ -176,29 +219,24 @@ body, html {
     text-align: center;
   }
 
+  .skills-and-coursework {
+    flex-direction: column
+  }
+
   .about-content {
     min-width: 200px;
     max-width: 100%;
     margin: 0;
   }
 
-  .card-content {
-    margin-left: 25px;
-    text-align: center;
-  }
-
   .profile-card {
-    max-width: 100%;
     flex-direction: row;
-    min-width: 720px;
-    min-height: 350px;
+    min-width: 100%;
+    min-height: 300px;
   }
 
   .card-image {
     min-width: 300px;
-    max-height: 300px;
-    margin-left: 20px;
-    border-radius: 10px;
   }
 
   .about-summary, .skills-section, .coursework-section {
@@ -210,7 +248,7 @@ body, html {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
   .about-summary p, .skills-section ul, .coursework-section ul {
     font-size: 1.0rem;
   }
@@ -218,7 +256,7 @@ body, html {
   .card-image {
     min-width: 225px;
     max-width: 300px;
-    height: 300px;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px 10px;
     margin: 10px 0px;
@@ -235,8 +273,7 @@ body, html {
 
   .profile-card {
     margin-top: 10px;
-    flex-direction: column;
-    min-width: 0px;
+    flex-direction: row;
   }
   
   .card-title {
@@ -244,17 +281,31 @@ body, html {
     margin-top: 0px;
   }
 
-}
-
-@media (max-width: 425px) {
-  .card-image {
-    min-width: 300px;
+  .profile-card {
+    margin: 0 auto;
   }
+
 }
 
-@media (max-width: 375px) {
+@media (max-width: 580px) {
   .card-image {
-    min-width: 270px;
+    min-width: 200px;
+  }
+
+  .profile-card {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+
+}
+
+/* @media (max-width: 375px) {
+  .card-image {
+    min-width: 100px;
+  }
+  .card-image-container {
+    min-width: 100px;
   }
 }
 
@@ -265,4 +316,4 @@ body, html {
   .card-image-container {
     min-width: 100px;
   }
-}
+} */

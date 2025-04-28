@@ -1,6 +1,5 @@
-
 import React from 'react';
-import './styles/About.css'
+import './styles/About.css';
 
 function About() {
     const base = import.meta.env.BASE_URL;
@@ -11,61 +10,79 @@ function About() {
                 <div className="about-summary">
                     <h2>About Me</h2>
                     <p>
-                        As a self-motivated and hard-working Computer Science graduate, I bring hands-on experience
-                        in Java programming and a deep understanding of the software development lifecycle. I am passionate
-                        about writing clean, efficient code and rigorously testing it to ensure flawless performance.
-                        My technical skills span various programming languages and technologies, including Java, React, HTML, CSS, PHP,
-                        JavaScript, and SQL. I am eager to leverage my abilities to contribute to innovative software development initiatives.
+                        I'm Ridvan Suleymanov — a passionate and determined Computer Science graduate with hands-on experience 
+                        in full-stack development and a sharp focus on clean, scalable code. From building Android apps and 
+                        developing REST APIs to deploying interactive features in production e-commerce environments, I thrive on solving complex problems 
+                        and crafting meaningful user experiences.
                     </p>
                     <p>
-                        <a href="https://drive.google.com/file/d/1YE7eaP68BltsxFtxmQznwS5A-cGeY5MN/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View My Resume!</a>
+                        During my Web Developer Internship at <strong>Cooledtured</strong>, I led the development of engaging anime-themed 
+                        quizzes that increased user interaction through dynamic character-matching logic, Firebase integration, and REST-based content updates. 
+                        I also contributed to cross-functional sprints with designers, marketers, and backend engineers to ship features under tight deadlines.
                     </p>
+                    <p>
+                        My toolkit includes <strong>React, Remix, Firebase, TailwindCSS, Java, Python, PHP, SQL</strong>, and mobile development with <strong>Android Studio</strong>. 
+                        I am actively looking for opportunities where I can grow as a developer and contribute to impactful products.
+                    </p>
+                    <a 
+                        className="resume-link" 
+                        href="https://drive.google.com/file/d/1YE7eaP68BltsxFtxmQznwS5A-cGeY5MN/view?usp=drive_link" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        📄 View My Resume
+                    </a>
                 </div>
+
                 <div className="skills-and-coursework">
                     <div className="skills-section">
                         <h3>Skills</h3>
                         <ul>
-                            <li>Java Programming</li>
-                            <li>HTML, CSS, JavaScript</li>
-                            <li>PHP</li>
-                            <li>SQL</li>
-                            <li>Android Development</li>
+                            <li>Java, Android SDK, Object-Oriented Programming</li>
+                            <li>React, Remix, TailwindCSS, HTML/CSS, JavaScript</li>
+                            <li>PHP, SQL, RESTful APIs</li>
+                            <li>Firebase (Auth, Firestore, Realtime DB)</li>
+                            <li>Version Control (Git, GitHub)</li>
                         </ul>
                     </div>
                     <div className="coursework-section">
-                        <h3>Coursework</h3>
+                        <h3>Relevant Coursework</h3>
                         <ul>
-                            <li>Web Programming</li>
-                            <li>Software Development</li>
-                            <li>Software Engineering</li>
-                            <li>Design & Algorithms</li>
+                            <li>Web Programming & Software Engineering</li>
+                            <li>Data Structures & Algorithms</li>
                             <li>Operating Systems</li>
+                            <li>Software Development Lifecycle</li>
+                            <li>Human-Computer Interaction</li>
                         </ul>
                     </div>
                 </div>
             </div>
+
             <div className="profile-card">
                 <div className="card-image-container">
                     <img 
                         className="card-image" 
-                        src={`${base}assets/Ridvan.png`}
-                        alt="profile picture" 
+                        src={`${base}assets/Ridvan.PNG`} 
+                        alt="Ridvan Suleymanov" 
                     />
                 </div>
                 <div className="card-content">
-                        <h2 className="card-title">Education</h2>
-                        <p className="card-text">
-                            Georgia State University 
-                            Atlanta, GA <br/>
-                            May 2024<br/>
-                            Bachelor of Science in Computer Science
-                        </p>
-                        <img className="gsulogo" src={`${base}assets/gsu.png`} alt="GSU Logo" />
-                    </div>
+                    <h2 className="card-title">Education</h2>
+                    <p className="card-text">
+                        Georgia State University <br />
+                        Atlanta, GA <br />
+                        <strong>May 2024</strong> <br />
+                        Bachelor of Science in Computer Science
+                    </p>
+                    <img 
+                        className="gsulogo" 
+                        src={`${base}assets/gsu.png`} 
+                        alt="GSU Logo" 
+                    />
                 </div>
             </div>
+        </div>
     );
 }
 
 export default About;
-
