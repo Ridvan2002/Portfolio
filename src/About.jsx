@@ -10,23 +10,16 @@ function About() {
                 <div className="about-summary">
                     <h2>About Me</h2>
                     <p>
-                        I'm Ridvan Suleymanov — a passionate and determined Computer Science graduate with hands-on experience 
-                        in full-stack development and a sharp focus on clean, scalable code. From building Android apps and 
-                        developing REST APIs to deploying interactive features in production e-commerce environments, I thrive on solving complex problems 
-                        and crafting meaningful user experiences.
+                    I'm Ridvan Suleymanov, a Computer Science graduate with hands-on experience in full-stack development and a focus on building clean, scalable applications. From developing Android apps and REST APIs to deploying interactive features in production e-commerce environments, I enjoy solving complex problems and enhancing user experiences.
                     </p>
                     <p>
-                        During my Web Developer Internship at <strong>Cooledtured</strong>, I led the development of engaging anime-themed 
-                        quizzes that increased user interaction through dynamic character-matching logic, Firebase integration, and REST-based content updates. 
-                        I also contributed to cross-functional sprints with designers, marketers, and backend engineers to ship features under tight deadlines.
+                    During my Web Developer Internship at Cooledtured, I led the creation of anime-themed quizzes that boosted user engagement through dynamic character-matching logic, Firebase integration, and REST-based updates. I collaborated with cross-functional teams to deliver features under tight deadlines.
                     </p>
                     <p>
-                        My toolkit includes <strong>React, Remix, Firebase, TailwindCSS, Java, Python, PHP, SQL</strong>, and mobile development with <strong>Android Studio</strong>. 
-                        I am actively looking for opportunities where I can grow as a developer and contribute to impactful products.
-                    </p>
+                    I'm eager to grow as a developer, solve real-world challenges, and contribute to meaningful, user-centered products that make a lasting impact.                    </p>
                     <a 
                         className="resume-link" 
-                        href="https://drive.google.com/file/d/1YE7eaP68BltsxFtxmQznwS5A-cGeY5MN/view?usp=drive_link" 
+                        href="https://drive.google.com/file/d/1Uu22yACuWjk15sDrQv7u0WvwrlYNX_hs/view?usp=sharing" 
                         target="_blank" 
                         rel="noopener noreferrer"
                     >
@@ -38,8 +31,8 @@ function About() {
                     <div className="skills-section">
                         <h3>Skills</h3>
                         <ul>
-                            <li>Java, Android SDK, Object-Oriented Programming</li>
-                            <li>React, Remix, TailwindCSS, HTML/CSS, JavaScript</li>
+                            <li>Java, Python, Android SDK, Object-Oriented Programming</li>
+                            <li>React, Remix, TailwindCSS, HTML/CSS, JavaScript, TypeScript</li>
                             <li>PHP, SQL, RESTful APIs</li>
                             <li>Firebase (Auth, Firestore, Realtime DB)</li>
                             <li>Version Control (Git, GitHub)</li>
@@ -48,7 +41,7 @@ function About() {
                     <div className="coursework-section">
                         <h3>Relevant Coursework</h3>
                         <ul>
-                            <li>Software Engineering</li>
+                            <li>Software Engineering / Development</li>
                             <li>Web Programming</li>
                             <li>Data Structures & Algorithms</li>
                             <li>Operating Systems</li>

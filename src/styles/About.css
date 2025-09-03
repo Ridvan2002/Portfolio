@@ -9,7 +9,6 @@ body, html {
 
 .main-content {
   flex: 1;
-  margin-left: 150px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -20,6 +19,7 @@ body, html {
   align-items: flex-start;
   justify-content: flex-start;
   padding: 20px 40px;
+  margin-left : 20px;
   text-align: left;
   flex-wrap: nowrap;
 }
@@ -109,7 +109,7 @@ body, html {
   max-height: 100px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1401px) {
   .skills-section h3, .coursework-section h3 {
       text-align: left;
       padding: 0px 20px;
@@ -185,7 +185,7 @@ body, html {
 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 816px) {
   .sidebar {
     position: static;
     width: 100%;
@@ -193,10 +193,6 @@ body, html {
     padding: 10px 0;
   }
 
-  .main-content {
-    margin-left: 0;
-    margin-top: 20px;
-  }
 
   .about-summary h2, .skills-section h3, .coursework-section h3 {
     text-align: center;
@@ -213,6 +209,7 @@ body, html {
   .about-section {
     flex-direction: column;
     padding: 10px;
+    margin-left : 0px;
     text-align: center;
   }
 

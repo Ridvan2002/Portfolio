@@ -1,7 +1,6 @@
 .projects-section {
     background-color: #f4f4f4;
     text-align: center;
-    margin-left: 20px;
 }
 
 .projects-title {
@@ -129,7 +128,6 @@
     .projects-section {
         background-color: #f4f4f4;
         text-align: center;
-        margin-top: 20px;
     }
 
     .project-card {
